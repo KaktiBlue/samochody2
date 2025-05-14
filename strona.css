@@ -1,0 +1,284 @@
+
+
+
+
+body {
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+   
+     font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+ }
+ 
+
+ 
+ #pierwsza_sekcja {
+     height: 50px;
+     border-bottom: 1px solid rgb(233, 234, 240);
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     background-color: rgb(255, 255, 255);
+    
+ }
+ 
+ .p1 {
+     padding-right: 2%;
+     cursor: pointer;
+     font-size: 0.9vw;
+     color: black;
+ }
+ 
+ #sekcja_druga {
+     height: 678px;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     padding-top: 10;
+  }
+   
+   #lewa2, #prawa2 {
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   #wiza {
+     border-radius: 15%;
+   }
+   
+   #p2 {
+     padding-left: 8%;
+     font-size: 2vw;
+     
+   }
+   
+ 
+ #sekcja_trzecia {
+     background-image: url('img/P90546610_highRes_the-new-bmw-i4-e-dri.jpg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     height: 678px;}
+ 
+ 
+#tekst_2 {
+     position: relative;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+     font-size: 4vw;
+     font-weight: bold;
+     padding-top: 13%;
+     cursor: pointer;
+     margin-left: 6%;
+   
+}
+a {
+  text-decoration: none; 
+}
+ .photo img {
+     width: 300px;
+     height: 401px;
+     border-radius: 8%;
+     margin: 10px;
+     transition: transform 0.3s ease;
+     opacity: 0.8;
+     cursor: pointer;
+ }
+ 
+ img:hover {
+     transform: scale(1.05);
+     opacity: 1;
+ }
+ 
+ #sekcja_4 {
+     height: 678px;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ #góra {
+     height: 10%;
+     color: rgb(134, 142, 148);
+ }
+ 
+ #modele {
+     display: flex;
+     justify-content: center;
+     margin-top: 5%;
+     font-size: 45px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+ }
+ 
+ #dół {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     margin-top: 7%;
+ }
+ .galeria ol {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        
+        .galeria li {
+          transition: transform 0.3s ease;
+        }
+        
+        .galeria img {
+          width: 300px;
+          height: 401px;
+          border-radius: 8%;
+          opacity: 0.8;
+          cursor: pointer;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .galeria img:hover {
+          transform: scale(1.05);
+          opacity: 1;
+        }
+ 
+ 
+
+ 
+ #sekcja_5 {
+     background-image: url('img/P90554881_highRes.jpg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     height: 678px;
+ }
+
+#tekst_5{ 
+     position: absolute;
+     color: white;
+     font-size: 4vw;
+     font-weight: bold;
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 11%;
+     cursor: pointer;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+     padding-left:24%;}
+
+
+ #footer_sekcja {
+     height: 50px;
+     border-top: 1px solid rgb(233, 234, 240);
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     background-color: rgb(255, 255, 255);
+     padding-top: 0;
+ }
+ 
+ #footer_sekcja .p1 {
+     padding-right: 2%;
+     cursor: pointer;
+     font-size: 0.9vw;
+ }
+ 
+
+
+
+
+ /*KUP*/
+ .galeria2 {
+     overflow: hidden;
+     white-space: nowrap;
+     width: 100%;
+     border-bottom:1px solid rgb(233, 234, 240); ;
+   }
+   
+   .galeria2 ol {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     gap: 20px;
+     animation: przesuwanie 30s linear infinite;
+   }
+   
+   .galeria2 li {
+     flex: 0 0 auto;
+     transition: transform 0.3s ease;
+   }
+   
+   .galeria2 img {
+     width: 169px;
+     height: 226px;
+     border-radius: 8%;
+     opacity: 0.8;
+     cursor: pointer;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+   }
+   
+   .galeria2 img:hover {
+     transform: scale(1.05);
+     opacity: 1;
+   }
+   
+   /* Animacja przesuwania */
+   @keyframes przesuwanie {
+     0% {
+       transform: translateX(0);
+     }
+     100% {
+       transform: translateX(-50%);
+     }
+   }
+   
+   .info {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px; /* odstęp między zdjęciem a tekstem */
+     padding:5% ;
+     border-bottom: 1px solid rgb(233, 234, 240);
+     border-top: 1px solid rgb(233, 234, 240);
+     border-radius: 20px;
+     background-color: #f9f9f9;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     max-width: 900px;
+     margin: 20px auto;
+     align-items: flex-start;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+   }
+   
+   .text-content {
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .text-content h3 {
+     text-align: center;
+     margin: 0;
+     font-size:30 ;
+   }
+   
+   .text-content p {
+     text-align: left;
+   }
+   .info img{
+     border-radius: 15%;
+     padding-top: 5%;
+   }
+   .info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);}
+   
